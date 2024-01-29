@@ -1,4 +1,75 @@
 .homes {
-  background-color: $color-secondary;
   grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 32rem));
+  gap: 6rem;
+
+  &__card {
+    display: grid;
+
+    .prop {
+      &__icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        fill: $color-primary;
+        margin-right: 1rem;
+      }
+      &__text {
+        font-size: 1.4rem;
+        color: $color-grey-dark-2;
+      }
+    }
+    .card__icon {
+      width: 3rem;
+      height: 3rem;
+      fill: $color-primary-dark;
+      grid-column: 1/ -1;
+      grid-row: 1/ 2;
+      justify-self: end;
+      align-self: start;
+      margin: 1rem 1rem 0 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1/2;
+  }
+
+  &__props {
+    padding: 3rem 2rem;
+    background-color: $color-grey-light-1;
+    display: grid;
+    gap: 3.5rem;
+    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding-top: 5rem;
+  }
+
+  &__prop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-self: end;
+    justify-self: center;
+    transform: translateY(50%);
+    width: 80%;
+    height: 5rem;
+    background-color: $color-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+  }
 }

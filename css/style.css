@@ -22,7 +22,7 @@ body {
   .container > * {
     font-size: 4rem; }
 
-.heading-1, .heading-2, .heading-3, .heading-4 {
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
   font-weight: 400;
   font-family: "Josefin Sans", sans-serif; }
 
@@ -55,11 +55,16 @@ body {
   .heading-4__light {
     color: #f9f7f6; }
 
+.heading-5 {
+  font-size: 1.6rem;
+  color: #fff; }
+
 .btn {
   background-color: transparent;
   border-radius: 0;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center; }
   .btn--primary {
     background-color: #c69963;
     transition: all 0.3s;
@@ -143,8 +148,63 @@ body {
   margin-bottom: 3rem; }
 
 .homes {
-  background-color: #101d2c;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 32rem));
+  gap: 6rem; }
+  .homes__card {
+    display: grid; }
+    .homes__card .prop__icon {
+      width: 2.25rem;
+      height: 2.25rem;
+      fill: #c69963;
+      margin-right: 1rem; }
+    .homes__card .prop__text {
+      font-size: 1.4rem;
+      color: #6d5d4b; }
+    .homes__card .card__icon {
+      width: 3rem;
+      height: 3rem;
+      fill: #b28451;
+      grid-column: 1/ -1;
+      grid-row: 1/ 2;
+      justify-self: end;
+      align-self: start;
+      margin: 1rem 1rem 0 0; }
+  .homes__img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1/2; }
+  .homes__props {
+    padding: 3rem 2rem;
+    background-color: #f9f7f6;
+    display: grid;
+    gap: 3.5rem;
+    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    padding-top: 5rem; }
+  .homes__prop {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .homes__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    align-self: end;
+    justify-self: center;
+    transform: translateY(50%);
+    width: 80%;
+    height: 5rem;
+    background-color: #101d2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize; }
 
 .gallery {
   background-color: #f9f7f6;
