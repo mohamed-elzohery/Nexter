@@ -152,7 +152,7 @@ body {
   margin: 15rem 0;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 32rem));
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
   gap: 6rem; }
   .homes__card {
     display: grid; }
@@ -261,5 +261,37 @@ body {
       grid-row: 6 / span 2; }
 
 .footer {
-  background-color: #6d5d4b;
-  grid-column: full-start / full-end; }
+  background-color: #101d2c;
+  grid-column: full-start / full-end;
+  padding: 10rem 8rem;
+  display: grid;
+  gap: 6rem; }
+  .footer__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-content: center;
+    gap: 3rem;
+    align-items: center; }
+  .footer__element {
+    text-align: center;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer__element:hover {
+      transform: translateY(-0.3rem);
+      background-color: rgba(255, 255, 255, 0.03); }
+  .footer__link {
+    color: #fff;
+    padding: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+    text-align: center; }

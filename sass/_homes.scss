@@ -3,7 +3,7 @@
   margin: 15rem 0;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 32rem));
+  grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
   gap: 6rem;
 
   &__card {
