@@ -27,7 +27,8 @@ body {
   font-family: "Josefin Sans", sans-serif; }
 
 .heading-1 {
-  font-size: 1.9rem; }
+  font-size: 4.5rem;
+  line-height: 1; }
   .heading-1__dark {
     color: #54483a; }
   .heading-1__light {
@@ -102,8 +103,42 @@ body {
     transform: translateY(1.5rem); }
 
 .header {
-  background-color: #c69963;
-  grid-column: full-start / col-end 6; }
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../img/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / col-end 6;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: 1fr repeat(3, min-content) 1fr min-content;
+  justify-content: center;
+  row-gap: 1.5rem;
+  padding: 8rem;
+  padding-top: 4rem; }
+  .header__btn {
+    justify-self: start;
+    align-self: start; }
+  .header__logo {
+    height: 3.5rem;
+    justify-self: center; }
+  .header__seenon-text {
+    color: #aaa;
+    font-size: 1.6rem;
+    align-self: end;
+    display: grid;
+    column-gap: 1.2rem;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center; }
+    .header__seenon-text::after, .header__seenon-text::before {
+      content: "";
+      height: 1px;
+      background-color: currentColor; }
+  .header__seenon-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem; }
+    .header__seenon-logos > img {
+      height: 2.5rem;
+      filter: brightness(70%); }
 
 .realators {
   background-color: #b28451;

@@ -4,7 +4,8 @@
 }
 .heading-1 {
   @extend %heading;
-  font-size: 1.9rem;
+  font-size: 4.5rem;
+  line-height: 1;
   &__dark {
     color: $color-grey-dark-1;
   }
