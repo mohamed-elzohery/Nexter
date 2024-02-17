@@ -1,4 +1,52 @@
 .realators {
-  background-color: $color-primary-dark;
+  background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  row-gap: 5vh;
+  justify-items: center;
+  align-items: center;
+
+  @media only screen and (max-width: $sm-bp) {
+    grid-column: full-start / full-end;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 2rem;
+    row-gap: 2vh;
+    padding: 4rem 0;
+    justify-content: center;
+
+    & > .heading-3 {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media only screen and (max-width: $xs-bp) {
+    grid-template-columns: max-content;
+  }
+}
+
+.realator {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  align-items: center;
+  justify-self: start;
+  column-gap: 1.5rem;
+
+  &__img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    grid-row: 1 / span 2;
+  }
+  &__name {
+    align-self: end;
+  }
+  &__hrs {
+    font-size: 1.2rem;
+    color: $color-grey-light-2;
+  }
 }
