@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://mohamed-elzohery.github.io/Nexter/" target="_blank">
-    <img src="	https://mohamed-elzohery.github.io/Nexter/img/logo.png" alt="Logo">
+    <img src="https://mohamed-elzohery.github.io/Nexter/img/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Nexter</h3>
@@ -52,9 +52,6 @@ and CSS.
 The nexter project is built with pure HTML and CSS with SASS as a preprocessor. The site uses
 the latest CSS features such as CSS grid and more.
 
-- [![Sass][Sass.js]][Sass-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
